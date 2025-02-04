@@ -1,18 +1,28 @@
 import About from "@/components/about";
+import ContactUs from "@/components/contactus";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
-import Innovations from "@/components/inofation";
 import Navbar from "@/components/navbar";
-import Solutions from "@/components/solutions";
+import Product from "@/components/product";
+import Services from "@/components/services";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <Hero />
-      <About />
-      <Solutions />
-      <Innovations />
+      <div id="about">
+        <About />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="product">
+        <Product />
+      </div>
+      <div id="contact">
+        <ContactUs />
+      </div>
       <Footer />
     </div>
   );
